@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Sort Game</title>
+    <link rel="stylesheet" href="water-sort.css">
+</head>
+<body>
+    <header>
+        <h1>Water Sort Game</h1>
+        <p>Sort the colored water into matching bottles!</p>
+    </header>
+
+    <section id="game">
+        <div class="game-container">
+            <div class="bottle" id="bottle1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="water" id="water1" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+            <div class="bottle" id="bottle2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="water" id="water2" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+            <div class="bottle" id="bottle3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="water" id="water3" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+            <div class="bottle" id="bottle4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="water" id="water4" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+        </div>
+        <button onclick="resetGame()">Reset Game</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fun Simulator. All rights reserved.</p>
+    </footer>
+
+    <script src="water-sort.js"></script>
+</body>
+</html>
